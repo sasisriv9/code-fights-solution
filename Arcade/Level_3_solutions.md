@@ -63,7 +63,7 @@ For n = 239017, the output should be isLucky(n) = false.
 ```python
 def isLucky(n):
     lst_num = [int(i) for i in str(n)]
-    half_len = len(lst_num)/2
+    half_len = len(lst_num)//2
     return sum(lst_num[:half_len]) == sum(lst_num[half_len:])
 ```
 
